@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# 获取 commit 信息
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+
+# 定义正则模式
+# 结构: type(scope)!: description
+# ! 表示 BREAKING CHANGE (可选)
+REGEXP="^(build|ci|docs|perf|feat|fix|refactor|style|test)(\([a-z0-9_-]+\))?!?: .+"
+
+# 错误提示信息
+ERROR_MSG="
+[ERROR] Commit message 格式不符合 Conventional Commits 规范！
+
+规范格式：<type>(<scope>): <description>
+示例：feat(ui): add primary button
+Commit Message Guidelines：https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines
+
+允许的 type 包括:
+  build, ci, docs, feat, fix, perf, refactor, style, test
+
+注意：
+  - scope 是可选的，需用圆括号包裹
+  - type 后必须紧跟冒号和空格
+"
+
+if [[ ! $COMMIT_MSG =~ $REGEXP ]]; then
+    echo "$ERROR_MSG"
+    exit 1
+fi

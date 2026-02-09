@@ -69,10 +69,6 @@ public class EmojiPicker {
 
             // 1. trie search all emoji
             List<Emoji> results = EmojiStore.search(text);
-            System.out.println("Find " + text + ": " + results.size());
-            results.forEach(emoji -> {
-                System.out.println(emoji.getChars() + "  " + emoji.getShortName());
-            });
             JPanel resultPanel = !currentUsingFirstPanel ? searchResultPanel : searchResultPanel2;
             // 2. 渲染 Emoji
             resultPanel.removeAll();

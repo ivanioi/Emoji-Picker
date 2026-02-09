@@ -87,6 +87,7 @@ public class EmojiStore {
         for (String string : keywordArr) {
             result.addAll(emojiTrie.search(string));
         }
+        result.addAll(emojiTrie.search(keywords));
         return result;
     }
 

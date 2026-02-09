@@ -1,34 +1,55 @@
 package io.github.ivanioi.emojipicker.java.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class EmojiTrie {
     private final EmojiTrieNode root;
     private Long size;
+    private final EmojiKeywordOptimizer keywordOptimizer;
+    // 无法通过单词(a-z)检索的 keyword 直接放到 map 中
+    private final Map<String, List<Emoji>> nonAlphabeticEmojiMap =  new HashMap<>();
 
     public EmojiTrie() {
         root = new EmojiTrieNode();
         size = 1L;
+
+        keywordOptimizer = new FlagEmojiOptimizer();
     }
 
     public void insert(Emoji emoji) {
         emoji.getKeywords().forEach((keyword) -> {
-           if (!isValid(keyword)) return;
-           insert(keyword, emoji);
+           if (!isValid(keyword.toLowerCase())) insertNonAlphabeticEmojiKeyword(keyword, emoji);
+           else insert(keyword.toLowerCase(), emoji);
         });
+
+        // 优化 emoji keywords
+        keywordOptimizer.handle(emoji).forEach(kw -> insert(kw, emoji));
+    }
+
+    private void insertNonAlphabeticEmojiKeyword(String keyword, Emoji emoji) {
+        if (nonAlphabeticEmojiMap.containsKey(keyword.toLowerCase())) nonAlphabeticEmojiMap.get(keyword.toLowerCase()).add(emoji);
+        else {
+            List<Emoji> emojiList = new ArrayList<>();
+            emojiList.add(emoji);
+            nonAlphabeticEmojiMap.put(keyword.toLowerCase(), emojiList);
+        }
+        size++;
     }
 
     private static boolean isValid(String keyword) {
         return keyword.chars().filter(i -> i < 97 || i > 122).count() == 0;
     }
 
-    private void insert(String keyword, Emoji emoji) {
-        if (!isValid(keyword)) return;
+    public void insert(String keyword, Emoji emoji) {
+        keyword = keyword.toLowerCase();
+
+        if (!isValid(keyword)) {
+            insertNonAlphabeticEmojiKeyword(keyword, emoji);
+            return;
+        }
 
         EmojiTrieNode currentNode = root;
-        int[] idxs = keyword.toLowerCase().chars().map(c -> c - 97).toArray();
+        int[] idxs = keyword.chars().map(c -> c - 97).toArray();
         for (int i = 0; i < idxs.length; i++) {
             int idx = idxs[i];
             EmojiTrieNode nextNode = Objects.isNull(currentNode.getChildren()[idx]) ? new EmojiTrieNode() : currentNode.getChildren()[idx];
@@ -57,8 +78,13 @@ public class EmojiTrie {
      * @return
      */
     public List<Emoji> search(String keyword) {
-        if (!isValid(keyword)) return new ArrayList<>();
+        keyword = keyword.toLowerCase();
         ArrayList<Emoji> result = new ArrayList<>();
+
+        if (!isValid(keyword)) {
+            List<Emoji> emojiList = nonAlphabeticEmojiMap.get(keyword);
+            return emojiList != null ? emojiList : result;
+        }
 
         int[] idxs = keyword.toLowerCase().chars().map(c -> c - 97).toArray();
         var currentNode = root;

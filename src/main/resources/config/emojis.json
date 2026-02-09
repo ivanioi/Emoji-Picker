@@ -3116,7 +3116,9 @@
     "code": "U+1F573",
     "category": "Smileys & Emotion",
     "tag": "emotion",
-    "keywords": []
+    "keywords": [
+      "hole"
+    ]
   },
   {
     "shortName": "speech balloon",
@@ -14031,7 +14033,9 @@
     "code": "U+26F0",
     "category": "Travel & Places",
     "tag": "place-geographic",
-    "keywords": []
+    "keywords": [
+      "mountain"
+    ]
   },
   {
     "shortName": "⊛ landslide",
@@ -14081,7 +14085,9 @@
     "code": "U+1F3D5",
     "category": "Travel & Places",
     "tag": "place-geographic",
-    "keywords": []
+    "keywords": [
+      "camping"
+    ]
   },
   {
     "shortName": "beach with umbrella",
@@ -14100,7 +14106,9 @@
     "code": "U+1F3DC",
     "category": "Travel & Places",
     "tag": "place-geographic",
-    "keywords": []
+    "keywords": [
+      "desert"
+    ]
   },
   {
     "shortName": "desert island",
@@ -14130,7 +14138,9 @@
     "code": "U+1F3DF",
     "category": "Travel & Places",
     "tag": "place-building",
-    "keywords": []
+    "keywords": [
+      "stadium"
+    ]
   },
   {
     "shortName": "classical building",
@@ -14565,7 +14575,9 @@
     "code": "U+26F2",
     "category": "Travel & Places",
     "tag": "place-other",
-    "keywords": []
+    "keywords": [
+      "fountain"
+    ]
   },
   {
     "shortName": "tent",
@@ -19396,7 +19408,9 @@
     "code": "U+1F50B",
     "category": "Objects",
     "tag": "computer",
-    "keywords": []
+    "keywords": [
+      "battery"
+    ]
   },
   {
     "shortName": "low battery",
@@ -19907,7 +19921,9 @@
     "code": "U+1F4D3",
     "category": "Objects",
     "tag": "book-paper",
-    "keywords": []
+    "keywords": [
+      "notebook"
+    ]
   },
   {
     "shortName": "ledger",
@@ -20425,7 +20441,9 @@
     "code": "U+270F",
     "category": "Objects",
     "tag": "writing",
-    "keywords": []
+    "keywords": [
+      "pencil"
+    ]
   },
   {
     "shortName": "black nib",
@@ -20478,7 +20496,9 @@
     "code": "U+1F58D",
     "category": "Objects",
     "tag": "writing",
-    "keywords": []
+    "keywords": [
+      "crayon"
+    ]
   },
   {
     "shortName": "memo",
@@ -20694,7 +20714,9 @@
     "code": "U+1F4CE",
     "category": "Objects",
     "tag": "office",
-    "keywords": []
+    "keywords": [
+      "paperclip"
+    ]
   },
   {
     "shortName": "linked paperclips",
@@ -23886,20 +23908,24 @@
     ]
   },
   {
-    "shortName": "keycap",
+    "shortName": "keycap: #",
     "chars": "#️⃣",
     "code": "U+0023 U+FE0F U+20E3",
     "category": "Symbols",
     "tag": "keycap",
-    "keywords": []
+    "keywords": [
+      "keycap"
+    ]
   },
   {
-    "shortName": "keycap",
+    "shortName": "keycap: *",
     "chars": "*️⃣",
     "code": "U+002A U+FE0F U+20E3",
     "category": "Symbols",
     "tag": "keycap",
-    "keywords": []
+    "keywords": [
+      "keycap"
+    ]
   },
   {
     "shortName": "keycap: 0",
@@ -24022,12 +24048,14 @@
     ]
   },
   {
-    "shortName": "keycap",
+    "shortName": "keycap: 10",
     "chars": "🔟",
     "code": "U+1F51F",
     "category": "Symbols",
     "tag": "keycap",
-    "keywords": []
+    "keywords": [
+      "keycap"
+    ]
   },
   {
     "shortName": "input latin uppercase",
@@ -25075,2099 +25103,2623 @@
     ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Ascension Island",
     "chars": "🇦🇨",
     "code": "U+1F1E6 U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Andorra",
     "chars": "🇦🇩",
     "code": "U+1F1E6 U+1F1E9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: United Arab Emirates",
     "chars": "🇦🇪",
     "code": "U+1F1E6 U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Afghanistan",
     "chars": "🇦🇫",
     "code": "U+1F1E6 U+1F1EB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Antigua & Barbuda",
     "chars": "🇦🇬",
     "code": "U+1F1E6 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Anguilla",
     "chars": "🇦🇮",
     "code": "U+1F1E6 U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Albania",
     "chars": "🇦🇱",
     "code": "U+1F1E6 U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Armenia",
     "chars": "🇦🇲",
     "code": "U+1F1E6 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Angola",
     "chars": "🇦🇴",
     "code": "U+1F1E6 U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Antarctica",
     "chars": "🇦🇶",
     "code": "U+1F1E6 U+1F1F6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Argentina",
     "chars": "🇦🇷",
     "code": "U+1F1E6 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: American Samoa",
     "chars": "🇦🇸",
     "code": "U+1F1E6 U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Austria",
     "chars": "🇦🇹",
     "code": "U+1F1E6 U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Australia",
     "chars": "🇦🇺",
     "code": "U+1F1E6 U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Aruba",
     "chars": "🇦🇼",
     "code": "U+1F1E6 U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Åland Islands",
     "chars": "🇦🇽",
     "code": "U+1F1E6 U+1F1FD",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Azerbaijan",
     "chars": "🇦🇿",
     "code": "U+1F1E6 U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Bosnia & Herzegovina",
     "chars": "🇧🇦",
     "code": "U+1F1E7 U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Barbados",
     "chars": "🇧🇧",
     "code": "U+1F1E7 U+1F1E7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Bangladesh",
     "chars": "🇧🇩",
     "code": "U+1F1E7 U+1F1E9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Belgium",
     "chars": "🇧🇪",
     "code": "U+1F1E7 U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Burkina Faso",
     "chars": "🇧🇫",
     "code": "U+1F1E7 U+1F1EB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Bulgaria",
     "chars": "🇧🇬",
     "code": "U+1F1E7 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Bahrain",
     "chars": "🇧🇭",
     "code": "U+1F1E7 U+1F1ED",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Burundi",
     "chars": "🇧🇮",
     "code": "U+1F1E7 U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Benin",
     "chars": "🇧🇯",
     "code": "U+1F1E7 U+1F1EF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: St. Barthélemy",
     "chars": "🇧🇱",
     "code": "U+1F1E7 U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Bermuda",
     "chars": "🇧🇲",
     "code": "U+1F1E7 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Brunei",
     "chars": "🇧🇳",
     "code": "U+1F1E7 U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Bolivia",
     "chars": "🇧🇴",
     "code": "U+1F1E7 U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Caribbean Netherlands",
     "chars": "🇧🇶",
     "code": "U+1F1E7 U+1F1F6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Brazil",
     "chars": "🇧🇷",
     "code": "U+1F1E7 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Bahamas",
     "chars": "🇧🇸",
     "code": "U+1F1E7 U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Bhutan",
     "chars": "🇧🇹",
     "code": "U+1F1E7 U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Bouvet Island",
     "chars": "🇧🇻",
     "code": "U+1F1E7 U+1F1FB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Botswana",
     "chars": "🇧🇼",
     "code": "U+1F1E7 U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Belarus",
     "chars": "🇧🇾",
     "code": "U+1F1E7 U+1F1FE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Belize",
     "chars": "🇧🇿",
     "code": "U+1F1E7 U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Canada",
     "chars": "🇨🇦",
     "code": "U+1F1E8 U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Cocos (Keeling) Islands",
     "chars": "🇨🇨",
     "code": "U+1F1E8 U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Congo - Kinshasa",
     "chars": "🇨🇩",
     "code": "U+1F1E8 U+1F1E9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Central African Republic",
     "chars": "🇨🇫",
     "code": "U+1F1E8 U+1F1EB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Congo - Brazzaville",
     "chars": "🇨🇬",
     "code": "U+1F1E8 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Switzerland",
     "chars": "🇨🇭",
     "code": "U+1F1E8 U+1F1ED",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Côte d’Ivoire",
     "chars": "🇨🇮",
     "code": "U+1F1E8 U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Cook Islands",
     "chars": "🇨🇰",
     "code": "U+1F1E8 U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Chile",
     "chars": "🇨🇱",
     "code": "U+1F1E8 U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Cameroon",
     "chars": "🇨🇲",
     "code": "U+1F1E8 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: China",
     "chars": "🇨🇳",
     "code": "U+1F1E8 U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Colombia",
     "chars": "🇨🇴",
     "code": "U+1F1E8 U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Clipperton Island",
     "chars": "🇨🇵",
     "code": "U+1F1E8 U+1F1F5",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Sark",
     "chars": "🇨🇶",
     "code": "U+1F1E8 U+1F1F6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Costa Rica",
     "chars": "🇨🇷",
     "code": "U+1F1E8 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Cuba",
     "chars": "🇨🇺",
     "code": "U+1F1E8 U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Cape Verde",
     "chars": "🇨🇻",
     "code": "U+1F1E8 U+1F1FB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Curaçao",
     "chars": "🇨🇼",
     "code": "U+1F1E8 U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Christmas Island",
     "chars": "🇨🇽",
     "code": "U+1F1E8 U+1F1FD",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Cyprus",
     "chars": "🇨🇾",
     "code": "U+1F1E8 U+1F1FE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Czechia",
     "chars": "🇨🇿",
     "code": "U+1F1E8 U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Germany",
     "chars": "🇩🇪",
     "code": "U+1F1E9 U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Diego Garcia",
     "chars": "🇩🇬",
     "code": "U+1F1E9 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Djibouti",
     "chars": "🇩🇯",
     "code": "U+1F1E9 U+1F1EF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Denmark",
     "chars": "🇩🇰",
     "code": "U+1F1E9 U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Dominica",
     "chars": "🇩🇲",
     "code": "U+1F1E9 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Dominican Republic",
     "chars": "🇩🇴",
     "code": "U+1F1E9 U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Algeria",
     "chars": "🇩🇿",
     "code": "U+1F1E9 U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Ceuta & Melilla",
     "chars": "🇪🇦",
     "code": "U+1F1EA U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Ecuador",
     "chars": "🇪🇨",
     "code": "U+1F1EA U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Estonia",
     "chars": "🇪🇪",
     "code": "U+1F1EA U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Egypt",
     "chars": "🇪🇬",
     "code": "U+1F1EA U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Western Sahara",
     "chars": "🇪🇭",
     "code": "U+1F1EA U+1F1ED",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Eritrea",
     "chars": "🇪🇷",
     "code": "U+1F1EA U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Spain",
     "chars": "🇪🇸",
     "code": "U+1F1EA U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Ethiopia",
     "chars": "🇪🇹",
     "code": "U+1F1EA U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: European Union",
     "chars": "🇪🇺",
     "code": "U+1F1EA U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Finland",
     "chars": "🇫🇮",
     "code": "U+1F1EB U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Fiji",
     "chars": "🇫🇯",
     "code": "U+1F1EB U+1F1EF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Falkland Islands",
     "chars": "🇫🇰",
     "code": "U+1F1EB U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Micronesia",
     "chars": "🇫🇲",
     "code": "U+1F1EB U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Faroe Islands",
     "chars": "🇫🇴",
     "code": "U+1F1EB U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: France",
     "chars": "🇫🇷",
     "code": "U+1F1EB U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Gabon",
     "chars": "🇬🇦",
     "code": "U+1F1EC U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: United Kingdom",
     "chars": "🇬🇧",
     "code": "U+1F1EC U+1F1E7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Grenada",
     "chars": "🇬🇩",
     "code": "U+1F1EC U+1F1E9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Georgia",
     "chars": "🇬🇪",
     "code": "U+1F1EC U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: French Guiana",
     "chars": "🇬🇫",
     "code": "U+1F1EC U+1F1EB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Guernsey",
     "chars": "🇬🇬",
     "code": "U+1F1EC U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Ghana",
     "chars": "🇬🇭",
     "code": "U+1F1EC U+1F1ED",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Gibraltar",
     "chars": "🇬🇮",
     "code": "U+1F1EC U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Greenland",
     "chars": "🇬🇱",
     "code": "U+1F1EC U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Gambia",
     "chars": "🇬🇲",
     "code": "U+1F1EC U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Guinea",
     "chars": "🇬🇳",
     "code": "U+1F1EC U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Guadeloupe",
     "chars": "🇬🇵",
     "code": "U+1F1EC U+1F1F5",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Equatorial Guinea",
     "chars": "🇬🇶",
     "code": "U+1F1EC U+1F1F6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Greece",
     "chars": "🇬🇷",
     "code": "U+1F1EC U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: South Georgia & South Sandwich Islands",
     "chars": "🇬🇸",
     "code": "U+1F1EC U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Guatemala",
     "chars": "🇬🇹",
     "code": "U+1F1EC U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Guam",
     "chars": "🇬🇺",
     "code": "U+1F1EC U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Guinea-Bissau",
     "chars": "🇬🇼",
     "code": "U+1F1EC U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Guyana",
     "chars": "🇬🇾",
     "code": "U+1F1EC U+1F1FE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Hong Kong SAR China",
     "chars": "🇭🇰",
     "code": "U+1F1ED U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Heard & McDonald Islands",
     "chars": "🇭🇲",
     "code": "U+1F1ED U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Honduras",
     "chars": "🇭🇳",
     "code": "U+1F1ED U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Croatia",
     "chars": "🇭🇷",
     "code": "U+1F1ED U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Haiti",
     "chars": "🇭🇹",
     "code": "U+1F1ED U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Hungary",
     "chars": "🇭🇺",
     "code": "U+1F1ED U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Canary Islands",
     "chars": "🇮🇨",
     "code": "U+1F1EE U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Indonesia",
     "chars": "🇮🇩",
     "code": "U+1F1EE U+1F1E9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Ireland",
     "chars": "🇮🇪",
     "code": "U+1F1EE U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Israel",
     "chars": "🇮🇱",
     "code": "U+1F1EE U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Isle of Man",
     "chars": "🇮🇲",
     "code": "U+1F1EE U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: India",
     "chars": "🇮🇳",
     "code": "U+1F1EE U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: British Indian Ocean Territory",
     "chars": "🇮🇴",
     "code": "U+1F1EE U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Iraq",
     "chars": "🇮🇶",
     "code": "U+1F1EE U+1F1F6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Iran",
     "chars": "🇮🇷",
     "code": "U+1F1EE U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Iceland",
     "chars": "🇮🇸",
     "code": "U+1F1EE U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Italy",
     "chars": "🇮🇹",
     "code": "U+1F1EE U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Jersey",
     "chars": "🇯🇪",
     "code": "U+1F1EF U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Jamaica",
     "chars": "🇯🇲",
     "code": "U+1F1EF U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Jordan",
     "chars": "🇯🇴",
     "code": "U+1F1EF U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Japan",
     "chars": "🇯🇵",
     "code": "U+1F1EF U+1F1F5",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Kenya",
     "chars": "🇰🇪",
     "code": "U+1F1F0 U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Kyrgyzstan",
     "chars": "🇰🇬",
     "code": "U+1F1F0 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Cambodia",
     "chars": "🇰🇭",
     "code": "U+1F1F0 U+1F1ED",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Kiribati",
     "chars": "🇰🇮",
     "code": "U+1F1F0 U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Comoros",
     "chars": "🇰🇲",
     "code": "U+1F1F0 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: St. Kitts & Nevis",
     "chars": "🇰🇳",
     "code": "U+1F1F0 U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: North Korea",
     "chars": "🇰🇵",
     "code": "U+1F1F0 U+1F1F5",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: South Korea",
     "chars": "🇰🇷",
     "code": "U+1F1F0 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Kuwait",
     "chars": "🇰🇼",
     "code": "U+1F1F0 U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Cayman Islands",
     "chars": "🇰🇾",
     "code": "U+1F1F0 U+1F1FE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Kazakhstan",
     "chars": "🇰🇿",
     "code": "U+1F1F0 U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Laos",
     "chars": "🇱🇦",
     "code": "U+1F1F1 U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Lebanon",
     "chars": "🇱🇧",
     "code": "U+1F1F1 U+1F1E7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: St. Lucia",
     "chars": "🇱🇨",
     "code": "U+1F1F1 U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Liechtenstein",
     "chars": "🇱🇮",
     "code": "U+1F1F1 U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Sri Lanka",
     "chars": "🇱🇰",
     "code": "U+1F1F1 U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Liberia",
     "chars": "🇱🇷",
     "code": "U+1F1F1 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Lesotho",
     "chars": "🇱🇸",
     "code": "U+1F1F1 U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Lithuania",
     "chars": "🇱🇹",
     "code": "U+1F1F1 U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Luxembourg",
     "chars": "🇱🇺",
     "code": "U+1F1F1 U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Latvia",
     "chars": "🇱🇻",
     "code": "U+1F1F1 U+1F1FB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Libya",
     "chars": "🇱🇾",
     "code": "U+1F1F1 U+1F1FE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Morocco",
     "chars": "🇲🇦",
     "code": "U+1F1F2 U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Monaco",
     "chars": "🇲🇨",
     "code": "U+1F1F2 U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Moldova",
     "chars": "🇲🇩",
     "code": "U+1F1F2 U+1F1E9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Montenegro",
     "chars": "🇲🇪",
     "code": "U+1F1F2 U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: St. Martin",
     "chars": "🇲🇫",
     "code": "U+1F1F2 U+1F1EB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Madagascar",
     "chars": "🇲🇬",
     "code": "U+1F1F2 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Marshall Islands",
     "chars": "🇲🇭",
     "code": "U+1F1F2 U+1F1ED",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: North Macedonia",
     "chars": "🇲🇰",
     "code": "U+1F1F2 U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Mali",
     "chars": "🇲🇱",
     "code": "U+1F1F2 U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Myanmar (Burma)",
     "chars": "🇲🇲",
     "code": "U+1F1F2 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Mongolia",
     "chars": "🇲🇳",
     "code": "U+1F1F2 U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Macao SAR China",
     "chars": "🇲🇴",
     "code": "U+1F1F2 U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Northern Mariana Islands",
     "chars": "🇲🇵",
     "code": "U+1F1F2 U+1F1F5",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Martinique",
     "chars": "🇲🇶",
     "code": "U+1F1F2 U+1F1F6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Mauritania",
     "chars": "🇲🇷",
     "code": "U+1F1F2 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Montserrat",
     "chars": "🇲🇸",
     "code": "U+1F1F2 U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Malta",
     "chars": "🇲🇹",
     "code": "U+1F1F2 U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Mauritius",
     "chars": "🇲🇺",
     "code": "U+1F1F2 U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Maldives",
     "chars": "🇲🇻",
     "code": "U+1F1F2 U+1F1FB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Malawi",
     "chars": "🇲🇼",
     "code": "U+1F1F2 U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Mexico",
     "chars": "🇲🇽",
     "code": "U+1F1F2 U+1F1FD",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Malaysia",
     "chars": "🇲🇾",
     "code": "U+1F1F2 U+1F1FE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Mozambique",
     "chars": "🇲🇿",
     "code": "U+1F1F2 U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Namibia",
     "chars": "🇳🇦",
     "code": "U+1F1F3 U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: New Caledonia",
     "chars": "🇳🇨",
     "code": "U+1F1F3 U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Niger",
     "chars": "🇳🇪",
     "code": "U+1F1F3 U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Norfolk Island",
     "chars": "🇳🇫",
     "code": "U+1F1F3 U+1F1EB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Nigeria",
     "chars": "🇳🇬",
     "code": "U+1F1F3 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Nicaragua",
     "chars": "🇳🇮",
     "code": "U+1F1F3 U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Netherlands",
     "chars": "🇳🇱",
     "code": "U+1F1F3 U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Norway",
     "chars": "🇳🇴",
     "code": "U+1F1F3 U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Nepal",
     "chars": "🇳🇵",
     "code": "U+1F1F3 U+1F1F5",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Nauru",
     "chars": "🇳🇷",
     "code": "U+1F1F3 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Niue",
     "chars": "🇳🇺",
     "code": "U+1F1F3 U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: New Zealand",
     "chars": "🇳🇿",
     "code": "U+1F1F3 U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Oman",
     "chars": "🇴🇲",
     "code": "U+1F1F4 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Panama",
     "chars": "🇵🇦",
     "code": "U+1F1F5 U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Peru",
     "chars": "🇵🇪",
     "code": "U+1F1F5 U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: French Polynesia",
     "chars": "🇵🇫",
     "code": "U+1F1F5 U+1F1EB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Papua New Guinea",
     "chars": "🇵🇬",
     "code": "U+1F1F5 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Philippines",
     "chars": "🇵🇭",
     "code": "U+1F1F5 U+1F1ED",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Pakistan",
     "chars": "🇵🇰",
     "code": "U+1F1F5 U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Poland",
     "chars": "🇵🇱",
     "code": "U+1F1F5 U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: St. Pierre & Miquelon",
     "chars": "🇵🇲",
     "code": "U+1F1F5 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Pitcairn Islands",
     "chars": "🇵🇳",
     "code": "U+1F1F5 U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Puerto Rico",
     "chars": "🇵🇷",
     "code": "U+1F1F5 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Palestinian Territories",
     "chars": "🇵🇸",
     "code": "U+1F1F5 U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Portugal",
     "chars": "🇵🇹",
     "code": "U+1F1F5 U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Palau",
     "chars": "🇵🇼",
     "code": "U+1F1F5 U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Paraguay",
     "chars": "🇵🇾",
     "code": "U+1F1F5 U+1F1FE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Qatar",
     "chars": "🇶🇦",
     "code": "U+1F1F6 U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Réunion",
     "chars": "🇷🇪",
     "code": "U+1F1F7 U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Romania",
     "chars": "🇷🇴",
     "code": "U+1F1F7 U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Serbia",
     "chars": "🇷🇸",
     "code": "U+1F1F7 U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Russia",
     "chars": "🇷🇺",
     "code": "U+1F1F7 U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Rwanda",
     "chars": "🇷🇼",
     "code": "U+1F1F7 U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Saudi Arabia",
     "chars": "🇸🇦",
     "code": "U+1F1F8 U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Solomon Islands",
     "chars": "🇸🇧",
     "code": "U+1F1F8 U+1F1E7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Seychelles",
     "chars": "🇸🇨",
     "code": "U+1F1F8 U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Sudan",
     "chars": "🇸🇩",
     "code": "U+1F1F8 U+1F1E9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Sweden",
     "chars": "🇸🇪",
     "code": "U+1F1F8 U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Singapore",
     "chars": "🇸🇬",
     "code": "U+1F1F8 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: St. Helena",
     "chars": "🇸🇭",
     "code": "U+1F1F8 U+1F1ED",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Slovenia",
     "chars": "🇸🇮",
     "code": "U+1F1F8 U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Svalbard & Jan Mayen",
     "chars": "🇸🇯",
     "code": "U+1F1F8 U+1F1EF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Slovakia",
     "chars": "🇸🇰",
     "code": "U+1F1F8 U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Sierra Leone",
     "chars": "🇸🇱",
     "code": "U+1F1F8 U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: San Marino",
     "chars": "🇸🇲",
     "code": "U+1F1F8 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Senegal",
     "chars": "🇸🇳",
     "code": "U+1F1F8 U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Somalia",
     "chars": "🇸🇴",
     "code": "U+1F1F8 U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Suriname",
     "chars": "🇸🇷",
     "code": "U+1F1F8 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: South Sudan",
     "chars": "🇸🇸",
     "code": "U+1F1F8 U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: São Tomé & Príncipe",
     "chars": "🇸🇹",
     "code": "U+1F1F8 U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: El Salvador",
     "chars": "🇸🇻",
     "code": "U+1F1F8 U+1F1FB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Sint Maarten",
     "chars": "🇸🇽",
     "code": "U+1F1F8 U+1F1FD",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Syria",
     "chars": "🇸🇾",
     "code": "U+1F1F8 U+1F1FE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Eswatini",
     "chars": "🇸🇿",
     "code": "U+1F1F8 U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Tristan da Cunha",
     "chars": "🇹🇦",
     "code": "U+1F1F9 U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Turks & Caicos Islands",
     "chars": "🇹🇨",
     "code": "U+1F1F9 U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Chad",
     "chars": "🇹🇩",
     "code": "U+1F1F9 U+1F1E9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: French Southern Territories",
     "chars": "🇹🇫",
     "code": "U+1F1F9 U+1F1EB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Togo",
     "chars": "🇹🇬",
     "code": "U+1F1F9 U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Thailand",
     "chars": "🇹🇭",
     "code": "U+1F1F9 U+1F1ED",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Tajikistan",
     "chars": "🇹🇯",
     "code": "U+1F1F9 U+1F1EF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Tokelau",
     "chars": "🇹🇰",
     "code": "U+1F1F9 U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Timor-Leste",
     "chars": "🇹🇱",
     "code": "U+1F1F9 U+1F1F1",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Turkmenistan",
     "chars": "🇹🇲",
     "code": "U+1F1F9 U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Tunisia",
     "chars": "🇹🇳",
     "code": "U+1F1F9 U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Tonga",
     "chars": "🇹🇴",
     "code": "U+1F1F9 U+1F1F4",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Türkiye",
     "chars": "🇹🇷",
     "code": "U+1F1F9 U+1F1F7",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Trinidad & Tobago",
     "chars": "🇹🇹",
     "code": "U+1F1F9 U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Tuvalu",
     "chars": "🇹🇻",
     "code": "U+1F1F9 U+1F1FB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Taiwan",
     "chars": "🇹🇼",
     "code": "U+1F1F9 U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Tanzania",
     "chars": "🇹🇿",
     "code": "U+1F1F9 U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Ukraine",
     "chars": "🇺🇦",
     "code": "U+1F1FA U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Uganda",
     "chars": "🇺🇬",
     "code": "U+1F1FA U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: U.S. Outlying Islands",
     "chars": "🇺🇲",
     "code": "U+1F1FA U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: United Nations",
     "chars": "🇺🇳",
     "code": "U+1F1FA U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: United States",
     "chars": "🇺🇸",
     "code": "U+1F1FA U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Uruguay",
     "chars": "🇺🇾",
     "code": "U+1F1FA U+1F1FE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Uzbekistan",
     "chars": "🇺🇿",
     "code": "U+1F1FA U+1F1FF",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Vatican City",
     "chars": "🇻🇦",
     "code": "U+1F1FB U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: St. Vincent & Grenadines",
     "chars": "🇻🇨",
     "code": "U+1F1FB U+1F1E8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Venezuela",
     "chars": "🇻🇪",
     "code": "U+1F1FB U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: British Virgin Islands",
     "chars": "🇻🇬",
     "code": "U+1F1FB U+1F1EC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: U.S. Virgin Islands",
     "chars": "🇻🇮",
     "code": "U+1F1FB U+1F1EE",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Vietnam",
     "chars": "🇻🇳",
     "code": "U+1F1FB U+1F1F3",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Vanuatu",
     "chars": "🇻🇺",
     "code": "U+1F1FB U+1F1FA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Wallis & Futuna",
     "chars": "🇼🇫",
     "code": "U+1F1FC U+1F1EB",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Samoa",
     "chars": "🇼🇸",
     "code": "U+1F1FC U+1F1F8",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Kosovo",
     "chars": "🇽🇰",
     "code": "U+1F1FD U+1F1F0",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Yemen",
     "chars": "🇾🇪",
     "code": "U+1F1FE U+1F1EA",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Mayotte",
     "chars": "🇾🇹",
     "code": "U+1F1FE U+1F1F9",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: South Africa",
     "chars": "🇿🇦",
     "code": "U+1F1FF U+1F1E6",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Zambia",
     "chars": "🇿🇲",
     "code": "U+1F1FF U+1F1F2",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Zimbabwe",
     "chars": "🇿🇼",
     "code": "U+1F1FF U+1F1FC",
     "category": "Flags",
     "tag": "country-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: England",
     "chars": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     "code": "U+1F3F4 U+E0067 U+E0062 U+E0065 U+E006E U+E0067 U+E007F",
     "category": "Flags",
     "tag": "subdivision-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Scotland",
     "chars": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
     "code": "U+1F3F4 U+E0067 U+E0062 U+E0073 U+E0063 U+E0074 U+E007F",
     "category": "Flags",
     "tag": "subdivision-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   },
   {
-    "shortName": "flag",
+    "shortName": "flag: Wales",
     "chars": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
     "code": "U+1F3F4 U+E0067 U+E0062 U+E0077 U+E006C U+E0073 U+E007F",
     "category": "Flags",
     "tag": "subdivision-flag",
-    "keywords": []
+    "keywords": [
+      "flag"
+    ]
   }
 ]

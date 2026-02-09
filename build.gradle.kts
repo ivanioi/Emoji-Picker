@@ -46,11 +46,6 @@ tasks {
     }
 }
 
-//tasks.runIde {
-//    systemProperty("idea.log.debug.categories", "#io.github.ivanioi.emojipicker.java:INFO")
-//    systemProperty("idea.log.console.stdout", "true")
-//}
-
 kotlin {
     compilerOptions {
         jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)

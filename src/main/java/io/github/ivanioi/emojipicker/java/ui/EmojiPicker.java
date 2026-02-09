@@ -4,16 +4,13 @@ import com.intellij.notification.NotificationGroupManager;
 import com.intellij.notification.NotificationType;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindowManager;
-import com.intellij.ui.JBColor;
 import com.intellij.ui.SearchTextField;
-import com.intellij.ui.components.JBLabel;
-import com.intellij.ui.components.JBPanel;
 import com.intellij.ui.components.panels.VerticalLayout;
-import com.intellij.util.ui.JBUI;
 import com.intellij.util.ui.UIUtil;
 import io.github.ivanioi.emojipicker.java.domain.Emoji;
 import io.github.ivanioi.emojipicker.java.utils.EmojiStore;
 import org.apache.commons.lang3.StringUtils;
+import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,7 +25,6 @@ public class EmojiPicker {
     private JPanel mainPanel;
     private SearchTextField searchInput;
     private JPanel categoryContainer;
-    private JPanel emojiDetail;
     private JScrollPane categories;
     private JPanel emojiContainer;
     private JScrollPane emojis;
@@ -36,13 +32,20 @@ public class EmojiPicker {
     private JLabel currentName;
     private JPanel details;
     private JLabel currentKeywords;
+    private JScrollPane keywordsContainer;
 
     private CardLayout emojiContainerCardLayout = new CardLayout();
 
     // 用于检索 emoji tag 后将其滚动到视口中
-    private Map<String, EmojiGroupCard> emojiGroupComponentCache = new HashMap<>();
-
     private Project project;
+
+    private final String SEARCH_RESULT_PANEL_CARD_KEY = "search-panel";
+    private JPanel searchResultPanel;
+    private final String SEARCH_RESULT_PANEL_CARD_KEY_2 = "search-panel-2";
+    private JPanel searchResultPanel2;
+    private boolean currentUsingFirstPanel = false;
+
+
     public EmojiPicker(Project project) {
         this.project = project;
         initComponents();
@@ -53,6 +56,97 @@ public class EmojiPicker {
     }
 
     private void initComponents() {
+        List<String> categories = initCategroyContainer();
+        initEmojiContainer(categories);
+        initSearchInput();
+    }
+
+    private void initSearchInput() {
+        // 初始化 searchInput
+        searchInput.getTextEditor().addActionListener(e -> {
+            String text = searchInput.getText();
+            if (StringUtils.isBlank(text)) return;
+
+            // 1. trie search all emoji
+            List<Emoji> results = EmojiStore.search(text);
+            System.out.println("Find " + text + ": " + results.size());
+            results.forEach(emoji -> {
+                System.out.println(emoji.getChars() + "  " + emoji.getShortName());
+            });
+            JPanel resultPanel = !currentUsingFirstPanel ? searchResultPanel : searchResultPanel2;
+            // 2. 渲染 Emoji
+            resultPanel.removeAll();
+            resultPanel.add(new EmojiGroupCard("results", results.stream().map(this::createEmojiCard).toList()));
+            // 3. 切换 card
+            emojiContainerCardLayout.show(emojiContainer, !currentUsingFirstPanel ? SEARCH_RESULT_PANEL_CARD_KEY :  SEARCH_RESULT_PANEL_CARD_KEY_2);
+        });
+    }
+
+
+
+    private void initEmojiContainer(List<String> categories) {
+        // 初始化 Emoji Container
+        emojis.getVerticalScrollBar().setUnitIncrement(35);
+        emojis.setBackground(UIUtil.getPanelBackground().brighter());
+        emojiContainer.setLayout(emojiContainerCardLayout);
+        emojiContainer.setBackground(UIUtil.getPanelBackground().brighter());
+        // 为每个 category 生成一个 Card Panel 存储相关的所有 Emoji
+        categories.forEach((category) -> {
+            JPanel panel = new JPanel(new VerticalLayout(10));
+            panel.setBackground(UIUtil.getPanelBackground().brighter());
+            // 把相同 tag 的 Emoji 放到一个 EmojiGroupCard 组件中
+            EmojiStore.listTags(category).forEach(tag -> {
+                EmojiGroupCard emojiGroupCard = new EmojiGroupCard(
+                        tag,
+                        EmojiStore.listEmojis(tag).stream().map(this::createEmojiCard).toList());
+                panel.add(emojiGroupCard);
+            });
+
+            emojiContainer.add(panel, category);
+        });
+
+        // 该 Panel 用于实时渲染检索内容
+        searchResultPanel = new JPanel(new VerticalLayout(10));
+        searchResultPanel.setBackground(UIUtil.getPanelBackground().brighter());
+        emojiContainer.add(searchResultPanel, SEARCH_RESULT_PANEL_CARD_KEY);
+
+        searchResultPanel2 = new JPanel(new VerticalLayout(10));
+        searchResultPanel2.setBackground(UIUtil.getPanelBackground().brighter());
+        emojiContainer.add(searchResultPanel2, SEARCH_RESULT_PANEL_CARD_KEY_2);
+
+
+
+        emojiContainerCardLayout.show(emojiContainer, categories.getFirst());
+    }
+
+    private @NotNull EmojiCard createEmojiCard(Emoji emoji) {
+        return new EmojiCard(emoji.getChars(), emoji.getTag(), new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // 复制 emoji 到系统剪切板中
+                StringSelection stringSelection = new StringSelection(emoji.getChars());
+                Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+
+                ToolWindowManager.getInstance(project).invokeLater(() -> {
+                    NotificationGroupManager.getInstance()
+                            .getNotificationGroup("Emoji Picker(IZ) Notifaction Group")
+                            .createNotification("Cpied: " + emoji.getChars(), NotificationType.INFORMATION)
+                            .notify(project);
+                });
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                // 在底部展示 emoji 详情信息
+                currentChars.setText(emoji.getChars());
+                currentName.setText(emoji.getShortName() + "( " + emoji.getTag() + " of " + emoji.getCategory() + " )");
+                currentKeywords.setText(String.join(", ", emoji.getKeywords()));
+            }
+        });
+    }
+
+    private @NotNull List<String> initCategroyContainer() {
         // 初始化 Category Container
         List<String> categories = EmojiStore.listCategories();
         categories.forEach((category) -> {
@@ -64,170 +158,8 @@ public class EmojiPicker {
                 }
             }));
         });
-
-        // 初始化 Emoji Container
-        emojis.getVerticalScrollBar().setUnitIncrement(35);
-        emojis.setBackground(UIUtil.getPanelBackground().brighter());
-        emojiContainer.setLayout(emojiContainerCardLayout);
-        emojiContainer.setBackground(UIUtil.getPanelBackground().brighter());
-        categories.forEach((category) -> {
-            JPanel panel = new JPanel(new VerticalLayout(10));
-            panel.setBackground(UIUtil.getPanelBackground().brighter());
-            EmojiStore.listTags(category).forEach(tag -> {
-                EmojiGroupCard emojiGroupCard = new EmojiGroupCard(
-                        tag,
-                        EmojiStore.listEmojis(tag).stream().map(
-                                emoji -> new EmojiCard(emoji.getChars(), emoji.getTag(), new MouseAdapter() {
-                                    @Override
-                                    public void mouseClicked(MouseEvent e) {
-                                        StringSelection stringSelection = new StringSelection(emoji.getChars());
-                                        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-
-                                        ToolWindowManager.getInstance(project).invokeLater(() -> {
-                                            NotificationGroupManager.getInstance()
-                                                    .getNotificationGroup("Emoji Picker(IZ) Notifaction Group")
-                                                    .createNotification("Cpied: " + emoji.getChars(), NotificationType.INFORMATION)
-                                                    .notify(project);
-                                        });
-
-                                    }
-
-                                    @Override
-                                    public void mouseEntered(MouseEvent e) {
-                                        currentChars.setText(emoji.getChars());
-                                        currentName.setText(emoji.getShortName() + "( " + emoji.getTag() + " of " + emoji.getCategory() + " )");
-                                        currentKeywords.setText(emoji.getTag());
-                                    }
-                                })).toList());
-                panel.add(emojiGroupCard);
-
-                emojiGroupComponentCache.put(tag, emojiGroupCard);
-            });
-
-            emojiContainer.add(panel, category);
-        });
-        emojiContainerCardLayout.show(emojiContainer, categories.getFirst());
-
-        // 初始化 searchInput
-        searchInput.getTextEditor().addActionListener(e -> {
-            String text = searchInput.getText();
-            if (StringUtils.isBlank(text) || EmojiStore.tag2category(text) == null) return;
-            // 1. 切换 card
-            emojiContainerCardLayout.show(emojiContainer, EmojiStore.tag2category(text));
-            // 2. 滚动对应 tag 到视口中
-            Rectangle bounds = emojiGroupComponentCache.get(text).getBounds();
-            emojiGroupComponentCache.get(text).scrollRectToVisible(new Rectangle(0, 0, bounds.width, bounds.height));
-        });
+        return categories;
     }
 
 
-
-
-    public static class EmojiGroupCard extends JBPanel<EmojiGroupCard> {
-
-        private final JPanel gridPanel;
-
-        /**
-         * @param title 分组标题
-         */
-        public EmojiGroupCard(String title) {
-
-            this.setLayout(new BorderLayout());
-            this.setBackground(UIUtil.getPanelBackground().brighter());
-            this.setBorder(JBUI.Borders.empty(10, 5));
-
-            // 1. 标题部分
-            if (!StringUtils.isBlank(title)) {
-                JBLabel titleLabel = new JBLabel(title);
-                titleLabel.setFont(UIUtil.getLabelFont().deriveFont(Font.BOLD, 25f));
-                titleLabel.setBorder(JBUI.Borders.empty(0, 5, 8, 0));
-                this.add(titleLabel, BorderLayout.NORTH);
-
-            }
-
-
-            // 2. 表情网格部分 - 固定 8 列
-            // GridLayout(rows, cols, hgap, vgap)
-            // rows 设为 0 表示行数根据组件数量自动计算
-            gridPanel = new JPanel(new GridLayout(0, 8, 5, 5));
-            gridPanel.setBackground(UIUtil.getPanelBackground().brighter());
-
-            // 3. 避免 cell 高度被拉伸
-            JPanel wrapper = new JPanel(new BorderLayout());
-            wrapper.add(gridPanel, BorderLayout.NORTH);
-            this.add(wrapper, BorderLayout.CENTER);
-        }
-
-        public EmojiGroupCard(String title, List<EmojiCard> emojiCards) {
-            this(title);
-            for (EmojiCard emojiCard : emojiCards) {
-                this.addEmoji(emojiCard);
-            }
-        }
-
-
-        public void addEmoji(EmojiCard emojiCard) {
-            gridPanel.add(emojiCard);
-        }
-
-        @Override
-        public Dimension getMaximumSize() {
-            Dimension preferredSize = getPreferredSize();
-            return new Dimension(Integer.MAX_VALUE, preferredSize.height);
-        }
-    }
-
-    private static class EmojiCard extends JPanel {
-        private final Color normalColor = UIUtil.getPanelBackground();
-        private final Color hoverColor = JBColor.namedColor("Button.hoverBackground", new JBColor(0xe6e6e6, 0x4e5052));
-
-        /**
-         *
-         * @param emojiText
-         * @param description
-         * @param callback    mouseEntered, mouseExited, mouseClicked
-         */
-        public EmojiCard(String emojiText, String description, MouseAdapter callback) {
-            // 设置卡片布局
-            this.setLayout(new BorderLayout());
-            this.setPreferredSize(new Dimension(60, 60)); // 固定的卡片大小
-            this.setBackground(normalColor);
-
-            // 设置卡片边框：圆角边框 (IntelliJ 风格)
-            this.setBorder(JBUI.Borders.customLine(JBColor.border(), 1));
-
-            // 设置气泡提示文本
-            this.setToolTipText(description);
-
-            // 添加 Emoji 文本
-            JLabel label = new JLabel(emojiText, SwingConstants.CENTER);
-            label.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 24));
-            this.add(label, BorderLayout.CENTER);
-
-            // 4. 鼠标悬浮逻辑 (Hover Effect)
-            this.addMouseListener(new MouseAdapter() {
-                @Override
-                public void mouseEntered(MouseEvent e) {
-                    // 鼠标进入，改变背景色
-                    setBackground(hoverColor);
-                    setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-                    callback.mouseEntered(e);
-                }
-
-                @Override
-                public void mouseExited(MouseEvent e) {
-                    // 鼠标离开，恢复背景色
-                    setBackground(normalColor);
-                    setCursor(Cursor.getDefaultCursor());
-                    callback.mouseExited(e);
-                }
-
-                @Override
-                public void mouseClicked(MouseEvent e) {
-                    // 可以在这里添加点击 Emoji 的动作
-                    callback.mouseClicked(e);
-                }
-            });
-        }
-    }
 }

@@ -4,17 +4,18 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.intellij.util.ResourceUtil;
 import io.github.ivanioi.emojipicker.java.domain.Emoji;
+import io.github.ivanioi.emojipicker.java.domain.EmojiTrie;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class EmojiStore {
     private static final Logger log = LoggerFactory.getLogger(EmojiStore.class);
+
+    private static final EmojiTrie emojiTrie = new EmojiTrie();
+
     private static final Map<String, String> category2emojiChars = new HashMap<>();
     private static final Map<String, List<String>> category2tags = new HashMap<>();
     private static final Map<String, List<Emoji>> tag2emojis = new HashMap<>();
@@ -26,8 +27,8 @@ public class EmojiStore {
         try {
             List<Emoji> emojiList = objectMapper.readValue(ResourceUtil.getResource(EmojiStore.class.getClassLoader(), "config", "emojis.json"),
                     new TypeReference<List<Emoji>>() {});
-            log.info("Configuration data loading......");
-            log.info("Emoji Count: {}", emojiList.size());
+            log.warn("Configuration data loading......");
+            log.warn("Emoji Count: {}", emojiList.size());
 
             emojiList.forEach(emoji -> {
                 if (!category2emojiChars.containsKey(emoji.getCategory())) {
@@ -48,7 +49,13 @@ public class EmojiStore {
                 tag2category.put(emoji.getTag(), emoji.getCategory());
                 size++;
             });
-            log.info("Data loading and initialization are complete.");
+
+            log.warn("Loading emoji trie......");
+            emojiList.forEach(emoji -> {
+                if (!Objects.isNull(emoji.getKeywords())) emojiTrie.insert(emoji);
+            });
+
+            log.warn("Data loading and initialization are complete.");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -72,6 +79,15 @@ public class EmojiStore {
 
     public static int size() {
         return size;
+    }
+
+    public static List<Emoji> search(String keywords) {
+        List<Emoji> result = new ArrayList<>();
+        String[] keywordArr = keywords.trim().split(" ");
+        for (String string : keywordArr) {
+            result.addAll(emojiTrie.search(string));
+        }
+        return result;
     }
 
     public static String tag2category(String tag) {

@@ -66,7 +66,7 @@
           </grid>
         </children>
       </scrollpane>
-      <grid id="2bcf8" binding="details" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="2bcf8" binding="details" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -74,56 +74,54 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="d3b81" binding="emojiDetail" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
+          <scrollpane id="3e10" binding="keywordsContainer">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="-1" height="80"/>
-                <maximum-size width="-1" height="80"/>
+              <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="30"/>
+                <preferred-size width="-1" height="30"/>
               </grid>
             </constraints>
-            <properties>
-              <font size="24" style="1"/>
-            </properties>
+            <properties/>
             <border type="none"/>
             <children>
-              <component id="5cd60" class="javax.swing.JLabel" binding="currentChars">
-                <constraints>
-                  <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="50" height="-1"/>
-                    <maximum-size width="50" height="-1"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <font size="36" style="1"/>
-                  <text value="Label"/>
-                </properties>
-              </component>
-              <component id="23536" class="javax.swing.JLabel" binding="currentName">
-                <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <font size="14" style="1"/>
-                  <text value="Label"/>
-                </properties>
-              </component>
               <component id="bc5f6" class="javax.swing.JLabel" binding="currentKeywords">
-                <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
+                <constraints/>
                 <properties>
+                  <autoscrolls value="true"/>
                   <font size="14" style="1"/>
                   <text value="Label"/>
                 </properties>
               </component>
             </children>
-          </grid>
-          <hspacer id="a6cbe">
+          </scrollpane>
+          <component id="23536" class="javax.swing.JLabel" binding="currentName">
             <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="14" style="1"/>
+              <text value="Label"/>
+            </properties>
+          </component>
+          <hspacer id="4573f">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
           </hspacer>
+          <component id="5cd60" class="javax.swing.JLabel" binding="currentChars">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+                <maximum-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="36" style="1"/>
+              <text value="Label"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>

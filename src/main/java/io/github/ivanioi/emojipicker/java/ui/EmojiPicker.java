@@ -7,6 +7,7 @@ import com.intellij.openapi.wm.ToolWindowManager;
 import com.intellij.ui.SearchTextField;
 import com.intellij.ui.components.panels.VerticalLayout;
 import com.intellij.util.ui.UIUtil;
+import io.github.ivanioi.emojipicker.java.domain.Emoji;
 import io.github.ivanioi.emojipicker.java.utils.EmojiStore;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
@@ -24,7 +25,6 @@ public class EmojiPicker {
     private JPanel mainPanel;
     private SearchTextField searchInput;
     private JPanel categoryContainer;
-    private JPanel emojiDetail;
     private JScrollPane categories;
     private JPanel emojiContainer;
     private JScrollPane emojis;
@@ -32,13 +32,21 @@ public class EmojiPicker {
     private JLabel currentName;
     private JPanel details;
     private JLabel currentKeywords;
+    private JScrollPane keywordsContainer;
 
     private CardLayout emojiContainerCardLayout = new CardLayout();
 
     // 用于检索 emoji tag 后将其滚动到视口中
     private Map<String, EmojiGroupCard> emojiGroupComponentCache = new HashMap<>();
-
     private Project project;
+
+    private final String SEARCH_RESULT_PANEL_CARD_KEY = "search-panel";
+    private JPanel searchResultPanel;
+    private final String SEARCH_RESULT_PANEL_CARD_KEY_2 = "search-panel-2";
+    private JPanel searchResultPanel2;
+    private boolean currentUsingFirstPanel = false;
+
+
     public EmojiPicker(Project project) {
         this.project = project;
         initComponents();
@@ -58,14 +66,24 @@ public class EmojiPicker {
         // 初始化 searchInput
         searchInput.getTextEditor().addActionListener(e -> {
             String text = searchInput.getText();
-            if (StringUtils.isBlank(text) || EmojiStore.tag2category(text) == null) return;
-            // 1. 切换 card
-            emojiContainerCardLayout.show(emojiContainer, EmojiStore.tag2category(text));
-            // 2. 滚动对应 cardGroupComponent 到视口
-            Rectangle bounds = emojiGroupComponentCache.get(text).getBounds();
-            emojiGroupComponentCache.get(text).scrollRectToVisible(new Rectangle(0, 0, bounds.width, bounds.height));
+            if (StringUtils.isBlank(text)) return;
+
+            // 1. trie search all emoji
+            List<Emoji> results = EmojiStore.search(text);
+            System.out.println("Find " + text + ": " + results.size());
+            results.forEach(emoji -> {
+                System.out.println(emoji.getChars() + "  " + emoji.getShortName());
+            });
+            JPanel resultPanel = !currentUsingFirstPanel ? searchResultPanel : searchResultPanel2;
+            // 2. 渲染 Emoji
+            resultPanel.removeAll();
+            resultPanel.add(new EmojiGroupCard("results", results.stream().map(this::createEmojiCard).toList()));
+            // 3. 切换 card
+            emojiContainerCardLayout.show(emojiContainer, !currentUsingFirstPanel ? SEARCH_RESULT_PANEL_CARD_KEY :  SEARCH_RESULT_PANEL_CARD_KEY_2);
         });
     }
+
+
 
     private void initEmojiContainer(List<String> categories) {
         // 初始化 Emoji Container
@@ -81,31 +99,7 @@ public class EmojiPicker {
             EmojiStore.listTags(category).forEach(tag -> {
                 EmojiGroupCard emojiGroupCard = new EmojiGroupCard(
                         tag,
-                        EmojiStore.listEmojis(tag).stream().map(
-                                emoji -> new EmojiCard(emoji.getChars(), emoji.getTag(), new MouseAdapter() {
-                                    @Override
-                                    public void mouseClicked(MouseEvent e) {
-                                        // 复制 emoji 到系统剪切板中
-                                        StringSelection stringSelection = new StringSelection(emoji.getChars());
-                                        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-
-                                        ToolWindowManager.getInstance(project).invokeLater(() -> {
-                                            NotificationGroupManager.getInstance()
-                                                    .getNotificationGroup("Emoji Picker(IZ) Notifaction Group")
-                                                    .createNotification("Cpied: " + emoji.getChars(), NotificationType.INFORMATION)
-                                                    .notify(project);
-                                        });
-
-                                    }
-
-                                    @Override
-                                    public void mouseEntered(MouseEvent e) {
-                                        // 在底部展示 emoji 详情信息
-                                        currentChars.setText(emoji.getChars());
-                                        currentName.setText(emoji.getShortName() + "( " + emoji.getTag() + " of " + emoji.getCategory() + " )");
-                                        currentKeywords.setText(emoji.getTag());
-                                    }
-                                })).toList());
+                        EmojiStore.listEmojis(tag).stream().map(this::createEmojiCard).toList());
                 panel.add(emojiGroupCard);
                 // cache EmojiGroupCard，用于将组件滚动到视口
                 emojiGroupComponentCache.put(tag, emojiGroupCard);
@@ -113,7 +107,46 @@ public class EmojiPicker {
 
             emojiContainer.add(panel, category);
         });
+
+        // 该 Panel 用于实时渲染检索内容
+        searchResultPanel = new JPanel(new VerticalLayout(10));
+        searchResultPanel.setBackground(UIUtil.getPanelBackground().brighter());
+        emojiContainer.add(searchResultPanel, SEARCH_RESULT_PANEL_CARD_KEY);
+
+        searchResultPanel2 = new JPanel(new VerticalLayout(10));
+        searchResultPanel2.setBackground(UIUtil.getPanelBackground().brighter());
+        emojiContainer.add(searchResultPanel2, SEARCH_RESULT_PANEL_CARD_KEY_2);
+
+
+
         emojiContainerCardLayout.show(emojiContainer, categories.getFirst());
+    }
+
+    private @NotNull EmojiCard createEmojiCard(Emoji emoji) {
+        return new EmojiCard(emoji.getChars(), emoji.getTag(), new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // 复制 emoji 到系统剪切板中
+                StringSelection stringSelection = new StringSelection(emoji.getChars());
+                Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+
+                ToolWindowManager.getInstance(project).invokeLater(() -> {
+                    NotificationGroupManager.getInstance()
+                            .getNotificationGroup("Emoji Picker(IZ) Notifaction Group")
+                            .createNotification("Cpied: " + emoji.getChars(), NotificationType.INFORMATION)
+                            .notify(project);
+                });
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                // 在底部展示 emoji 详情信息
+                currentChars.setText(emoji.getChars());
+                currentName.setText(emoji.getShortName() + "( " + emoji.getTag() + " of " + emoji.getCategory() + " )");
+                currentKeywords.setText(String.join(", ", emoji.getKeywords()));
+            }
+        });
     }
 
     private @NotNull List<String> initCategroyContainer() {
